@@ -76,7 +76,7 @@ select current_date - Interval '5 years'
 --- Movies directed by Mark Waters 
 
 Select title,director from netflix ---- there can be more than one directors, so we are using 'LIKE' function, we can use 
-where director = 'Mark Waters'     -----'ILIKE' function which do not conciders case sensitivity
+where director = 'Mark Waters'     -----'ILIKE' function which do not considers case sensitivity
 
 Select title, director from netflix
 where director like '%Rajiv Chilaka%'
@@ -164,4 +164,5 @@ Select
        Category,
        count(*) as total_content
 from New_table	   
+
 group by Category
